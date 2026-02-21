@@ -159,7 +159,7 @@
     </section>
 
 
-    <section id="machines" class="py-24 bg-white relative z-10">
+    <section id="machines" class="pb-24 md:pt-16 bg-white relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-brand-600 font-bold tracking-wide uppercase text-sm mb-2">Machines</h2>
@@ -256,51 +256,82 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <div class="flex flex-col md:flex-row justify-between items-end mb-16">
-                        <div class="max-w-2xl">
-                            <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm">MACHINES</h2>
-                            <p class="mt-2 text-3xl text-neutral-900 font-bold tracking-tight sm:text-4xl">Advantages: Maximize Production Efficiency & Quality Assurance</p>
-                        </div>
-                    </div>
-                    <div class="space-y-8">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">1</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Trusted machines supplied from Anchor</h4>
-                                <p class="text-neutral-600 mt-2 text-sm">Supported by reliable machines from Anchor that have been tested and comply with industry standards.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">2</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Strong customer-support mindset</h4>
-                                <p class="text-neutral-600 mt-2 text-sm">Supported by experienced and certified technical teams ready to provide fast and accurate solutions for any technical challenges you face.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">3</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">End-to-end project handling (supply to operation)</h4>
-                                <p class="text-neutral-600 mt-2 text-sm">Complete service from procurement to operation, including installation, training, and technical support.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">4</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Understanding of local Industrial regulations and standards</h4>
-                                <p class="text-neutral-600 mt-2 text-sm">Understanding of local industrial regulations and standards to ensure compliance and alignment with industry requirements.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">5</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Responsive and professional technical team</h4>
-                                <p class="text-neutral-600 mt-2 text-sm">Supported by experienced and certified technical teams ready to provide fast and accurate solutions for any technical challenges you face.</p>
-                            </div>
-                        </div>
-                    </div>
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <div class="max-w-2xl">
+            <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm">MACHINES</h2>
+            <p class="mt-2 text-3xl text-neutral-900 font-bold tracking-tight sm:text-4xl">Advantages: Maximize Production Efficiency & Quality Assurance</p>
+        </div>
+    </div>
+    
+    <div class="space-y-4">
+        
+        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion('adv1')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                <div class="flex items-center gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">1</div>
+                    <h4 class="text-md font-bold text-neutral-900">Trusted machines supplied from Anchor</h4>
                 </div>
+                <svg id="adv1-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            <div id="adv1-content" class="max-h-40 overflow-hidden transition-all duration-300 opacity-100 px-4 ml-14">
+                <p class="text-neutral-600 pb-4 text-sm">Supported by reliable machines from Anchor that have been tested and comply with industry standards.</p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion('adv2')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                <div class="flex items-center gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">2</div>
+                    <h4 class="text-md font-bold text-neutral-900">Strong customer-support mindset</h4>
+                </div>
+                <svg id="adv2-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            <div id="adv2-content" class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-4 ml-14">
+                <p class="text-neutral-600 pb-4 text-sm">Supported by experienced and certified technical teams ready to provide fast and accurate solutions for any technical challenges you face.</p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion('adv3')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                <div class="flex items-center gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">3</div>
+                    <h4 class="text-md font-bold text-neutral-900">End-to-end project handling (supply to operation)</h4>
+                </div>
+                <svg id="adv3-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            <div id="adv3-content" class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-4 ml-14">
+                <p class="text-neutral-600 pb-4 text-sm">Complete service from procurement to operation, including installation, training, and technical support.</p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion('adv4')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                <div class="flex items-center gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">4</div>
+                    <h4 class="text-md font-bold text-neutral-900">Understanding of local Industrial regulations and standards</h4>
+                </div>
+                <svg id="adv4-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            <div id="adv4-content" class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-4 ml-14">
+                <p class="text-neutral-600 pb-4 text-sm">Understanding of local industrial regulations and standards to ensure compliance and alignment with industry requirements.</p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+            <button onclick="toggleAccordion('adv5')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                <div class="flex items-center gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">5</div>
+                    <h4 class="text-md font-bold text-neutral-900">Responsive and professional technical team</h4>
+                </div>
+                <svg id="adv5-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            <div id="adv5-content" class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-4 ml-14">
+                <p class="text-neutral-600 pb-4 text-sm">Supported by experienced and certified technical teams ready to provide fast and accurate solutions for any technical challenges you face.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
                 <div class="relative">
                     <div class="absolute -inset-4 bg-neutral-200 rounded-xl blur-lg opacity-30"></div>
                     <img src="img/factory.png" alt="Our Factory" class="relative rounded-xl shadow-2xl">
@@ -391,47 +422,82 @@
                         We provide comprehensive services with a strong commitment to reliability, responsiveness, and regulatory compliance to ensure your machines operate at their best and meet all industry standards.
                     </p> -->
 
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">1</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Experienced in handling industrial licensing and compliance</h4>
-                                <p class="text-neutral-600 mt-1 text-sm">We have experience in handling various industrial licensing and regulatory compliance matters in Indonesia.</p>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+                            <button onclick="toggleComplianceAccordion('comp1')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">1</div>
+                                    <h4 class="text-md font-bold text-neutral-900">Experienced in handling industrial licensing and compliance</h4>
+                                </div>
+                                <svg id="comp1-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div id="comp1-content" class="max-h-40 overflow-hidden transition-all duration-300 opacity-100 px-4 ml-14">
+                                <p class="text-neutral-600 pb-4 text-sm">We have experience in handling various industrial licensing and regulatory compliance matters in Indonesia.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">2</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Strong understanding of UTTP and machine regulation procedures</h4>
-                                <p class="text-neutral-600 mt-1 text-sm">We have deep knowledge of UTTP (Unit Testing and Production Procedure) and machine regulation procedures in Indonesia.</p>
+
+                        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+                            <button onclick="toggleComplianceAccordion('comp2')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">2</div>
+                                    <h4 class="text-md font-bold text-neutral-900">Strong understanding of UTTP and machine regulation procedures</h4>
+                                </div>
+                                <svg id="comp2-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div id="comp2-content" class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-4 ml-14">
+                                <p class="text-neutral-600 pb-4 text-sm">We have deep knowledge of UTTP (Unit Testing and Production Procedure) and machine regulation procedures in Indonesia.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">3</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Reliable coordination with government and certification bodies</h4>
-                                <p class="text-neutral-600 mt-1 text-sm">We have established strong relationships with government and certification bodies in Indonesia to ensure smooth regulatory processes.</p>
+
+                        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+                            <button onclick="toggleComplianceAccordion('comp3')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">3</div>
+                                    <h4 class="text-md font-bold text-neutral-900">Reliable coordination with government and certification bodies</h4>
+                                </div>
+                                <svg id="comp3-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div id="comp3-content" class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-4 ml-14">
+                                <p class="text-neutral-600 pb-4 text-sm">We have established strong relationships with government and certification bodies in Indonesia to ensure smooth regulatory processes.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">4</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Fast and systematic permit processing workflow</h4>
-                                <p class="text-neutral-600 mt-1 text-sm">Our streamlined permit processing workflow ensures quick and efficient handling of all necessary documentation and approvals.</p>
+
+                        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+                            <button onclick="toggleComplianceAccordion('comp4')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">4</div>
+                                    <h4 class="text-md font-bold text-neutral-900">Fast and systematic permit processing workflow</h4>
+                                </div>
+                                <svg id="comp4-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div id="comp4-content" class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-4 ml-14">
+                                <p class="text-neutral-600 pb-4 text-sm">Our streamlined permit processing workflow ensures quick and efficient handling of all necessary documentation and approvals.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">5</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Minimized risk of operational delays due to licensing issues</h4>
-                                <p class="text-neutral-600 mt-1 text-sm">Our proactive approach to licensing and regulatory compliance minimizes the risk of operational delays caused by missing or incomplete permits.</p>
+
+                        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+                            <button onclick="toggleComplianceAccordion('comp5')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">5</div>
+                                    <h4 class="text-md font-bold text-neutral-900">Minimized risk of operational delays due to licensing issues</h4>
+                                </div>
+                                <svg id="comp5-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div id="comp5-content" class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-4 ml-14">
+                                <p class="text-neutral-600 pb-4 text-sm">Our proactive approach to licensing and regulatory compliance minimizes the risk of operational delays caused by missing or incomplete permits.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold">6</div>
-                            <div>
-                                <h4 class="text-md font-bold text-neutral-900">Dedicated team for documentation and compliance support</h4>
-                                <p class="text-neutral-600 mt-1 text-sm">Our dedicated team ensures all documentation is properly prepared and submitted, reducing the risk of delays and ensuring compliance with all regulatory requirements.</p>
+
+                        <div class="bg-gradient-to-br from-neutral-100 to-brand-50 rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300">
+                            <button onclick="toggleComplianceAccordion('comp6')" class="w-full text-left p-4 flex items-center justify-between focus:outline-none group">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">6</div>
+                                    <h4 class="text-md font-bold text-neutral-900">Dedicated team for documentation and compliance support</h4>
+                                </div>
+                                <svg id="comp6-icon" class="w-5 h-5 text-neutral-500 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </button>
+                            <div id="comp6-content" class="max-h-0 overflow-hidden transition-all duration-300 opacity-0 px-4 ml-14">
+                                <p class="text-neutral-600 pb-4 text-sm">Our dedicated team ensures all documentation is properly prepared and submitted, reducing the risk of delays and ensuring compliance with all regulatory requirements.</p>
                             </div>
                         </div>
                     </div>
@@ -480,6 +546,68 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    function toggleAccordion(clickedId) {
+        // Daftar semua ID accordion yang ada
+        const allIds = ['adv1', 'adv2', 'adv3', 'adv4', 'adv5'];
+
+        allIds.forEach(id => {
+            const content = document.getElementById(id + '-content');
+            const icon = document.getElementById(id + '-icon');
+
+            if (id === clickedId) {
+                // Jika ini adalah elemen yang baru saja di-klik, lakukan toggle (buka/tutup)
+                if (content.classList.contains('max-h-0')) {
+                    // Buka accordion
+                    content.classList.remove('max-h-0', 'opacity-0');
+                    content.classList.add('max-h-40', 'opacity-100'); 
+                    icon.classList.add('rotate-180');
+                } else {
+                    // Tutup accordion
+                    content.classList.add('max-h-0', 'opacity-0');
+                    content.classList.remove('max-h-40', 'opacity-100');
+                    icon.classList.remove('rotate-180');
+                }
+            } else {
+                // Jika ini BUKAN elemen yang di-klik, paksa tutup
+                content.classList.add('max-h-0', 'opacity-0');
+                content.classList.remove('max-h-40', 'opacity-100');
+                icon.classList.remove('rotate-180');
+            }
+        });
+    }
+    
+    // Fungsi BARU khusus untuk section Compliance (biar gak bentrok sama accordion sebelumnya)
+    function toggleComplianceAccordion(clickedId) {
+        // Daftar 6 ID khusus untuk bagian ini
+        const allIds = ['comp1', 'comp2', 'comp3', 'comp4', 'comp5', 'comp6'];
+
+        allIds.forEach(id => {
+            const content = document.getElementById(id + '-content');
+            const icon = document.getElementById(id + '-icon');
+
+            if (id === clickedId) {
+                if (content.classList.contains('max-h-0')) {
+                    // Buka
+                    content.classList.remove('max-h-0', 'opacity-0');
+                    content.classList.add('max-h-40', 'opacity-100'); 
+                    icon.classList.add('rotate-180');
+                } else {
+                    // Tutup
+                    content.classList.add('max-h-0', 'opacity-0');
+                    content.classList.remove('max-h-40', 'opacity-100');
+                    icon.classList.remove('rotate-180');
+                }
+            } else {
+                // Paksa tutup yang lain
+                content.classList.add('max-h-0', 'opacity-0');
+                content.classList.remove('max-h-40', 'opacity-100');
+                icon.classList.remove('rotate-180');
+            }
+        });
+    }
+    </script>
 
 </body>
 </html>
