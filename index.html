@@ -6,6 +6,9 @@
     <title>Arunika Solution Industrial - Inspection & Palletizing Expert</title>
     <meta name="description" content="PT Arunika Solution Industrial is a trusted provider of inspection systems and palletizing machines for manufacturing industries in Indonesia.">
     <link rel="canonical" href="https://arunika-solution.com">
+    <!-- <link rel="stylesheet" href="dist/style.css"> -->
+    <!-- Tailwind CSS CDN untuk JIT -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Open Graph Meta Tags -->
     <meta property="og:url" content="https://arunika-solution.com">
     <meta property="og:type" content="website">
@@ -21,37 +24,10 @@
     <meta name="twitter:image" content="img/opengraph.png">
     <!-- others -->
     <link rel="icon" href="img/brand-sq-transparent.png">
-    <link rel="stylesheet" href="dist/style.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#fef2f2',
-                            100: '#fee2e2',
-                            200: '#fecaca',
-                            400: '#f87171',
-                            500: '#ef4444',
-                            600: '#dc2626', // Primary Red/Orange from logo
-                            800: '#991b1b', // Darker Red
-                            900: '#7f1d1d', // Deep Red
-                        },
-                        brandgrey: {
-                            600: '#535455',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         /* Custom Utilities if needed */
         .hero-bg {
@@ -60,6 +36,32 @@
             background-position: center;
         }
     </style>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        50: '#fef2f2',
+                        100: '#fee2e2',
+                        200: '#fecaca',
+                        400: '#f87171',
+                        500: '#ef4444',
+                        600: '#dc2626',
+                        800: '#991b1b',
+                        900: '#7f1d1d',
+                    },
+                    brandgrey: {
+                        600: '#535455',
+                    }
+                }
+            }
+        }
+    }
+    </script>
 </head>
 <body class="font-sans text-neutral-600 antialiased">
 
